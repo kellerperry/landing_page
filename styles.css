@@ -3,6 +3,9 @@
 body {
     margin: 0;
     font-family: 'Roboto' , sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 body,
@@ -11,9 +14,13 @@ body,
     flex-direction: column;
 }
 
+.container {
+    display: flex;
+    flex: 1;
+}
+
 header,
 .welcome,
-.center,
 .quote-container,
 .bottom,
 footer {
@@ -49,8 +56,23 @@ footer {
 }
 
 .welcome {
-    justify-content: space-around;
-    padding: 32px;
+justify-content: center;
+padding: 50px;
+
+}
+
+.welcome-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 75px;
+  
+
+}
+
+
+.welcome h1 {
+    margin-bottom: 0;
 }
 
 .title {
@@ -62,15 +84,38 @@ footer {
     color: #f9faf8;
     border-radius: 5px;
     border: 0;
-    padding: 8px 16px
+    padding: 8px 22px
 }
 
 .hero-img img {
-    width: 300px
+    width: 250px;
 }
 
+
 .center {
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cards {
+    display: flex;
+    gap: 24px;
+    max-width: 700px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.card-box {
+    border: solid 3px #3882f6;
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
 }
 
 .quote-container {
@@ -85,4 +130,5 @@ footer {
 
 footer {
     justify-content: center;
+    margin-top: auto;
 }
