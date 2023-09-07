@@ -3,22 +3,26 @@
 body {
     font-family: 'Roboto' , sans-serif;
     min-height: 100vh;
+    display: flex;
     flex-direction: column;
     padding: 0;
     margin: 0;
-    text-align: center;
 }
 
 main {
-    display: flex;
-    flex-direction: column;
+   flex: 1;
 }
 
+
+/* Header Section */
 
 header {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding: 12px;
+    background-color: #1f2937;
+    color: #f9faf8;
 }
 
 header h1 {
@@ -35,9 +39,9 @@ header ul {
     margin: 0;
 }
 
-.welcome,
-header,
-footer {
+/* Welcome Section */
+
+.welcome {
     background-color: #1f2937;
     color: #f9faf8;
 }
@@ -60,6 +64,7 @@ h1 {
    font-size: 48px;
    font-weight: 900;
    margin: 0;
+   text-align: left;
 }
 
 .title p {
@@ -72,12 +77,18 @@ h1 {
     color: #f9faf8;
     border-radius: 5px;
     border: 0;
-    padding: 8px 22px
+    padding: 8px 22px;
+    flex-shrink: 0;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
 }
 
 .hero-img img {
     width: 275px;
+    flex: 1;
 }
+
 
 
 /* Card Section */
@@ -102,22 +113,22 @@ h2 {
     justify-content: center;  
     gap: 24px;
 
-    border: red 2px solid;
+    /* border: red 2px solid; */
 }
 
 .card {
-    flex: 1;
-    border: darkgoldenrod 2px solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: darkgoldenrod 2px solid; */
 }
 
 
 .card-text {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
     margin-top: 10px;
     width: 150px;
-    border: purple 2px solid;
+    /* border: purple 2px solid; */
 }
 
 .card img {
@@ -198,5 +209,8 @@ h3 {
 footer {
     display: flex;
     justify-content: center;
-    margin-top: auto;
+    flex: 0 0 auto;
+    padding: 1rem;
+    background-color: #1f2937;
+    color: #f9faf8;
 }
