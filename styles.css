@@ -1,33 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@500;700;800&family=Roboto:ital,wght@0,100;0,400;0,500;0,700;0,900;1,100&display=swap');
 
 body {
-    margin: 0;
     font-family: 'Roboto' , sans-serif;
+    min-height: 100vh;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+main {
     display: flex;
     flex-direction: column;
 }
 
-body,
-.top {
-    display: flex;
-    flex-direction: column;
-}
-
-.container {
-    display: flex;
-    flex: 1;
-}
-
-header,
-.welcome,
-.quote-container,
-.bottom,
-footer {
-    display: flex;
-    
-}
 
 header {
+    display: flex;
     justify-content: space-around;
     align-items: center;
 }
@@ -54,25 +43,23 @@ footer {
 }
 
 .welcome {
-justify-content: center;
-padding: 50px;
-}
-
-.welcome-container {
     display: flex;
-    justify-content: space-around;
     align-items: center;
+    justify-content: center;
     gap: 75px;
+    padding: 50px;
 }
 
-
-.welcome h1, p {
-    margin: 16px 0;
+.title {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
 
-.title h1 {
+h1 {
    font-size: 48px;
    font-weight: 900;
+   margin: 0;
 }
 
 .title p {
@@ -80,6 +67,7 @@ padding: 50px;
 }
 
 .order-now, .sign-up {
+    width: 110px;
     background-color: #3882f6;
     color: #f9faf8;
     border-radius: 5px;
@@ -92,22 +80,17 @@ padding: 50px;
 }
 
 
+/* Card Section */
+
 .center {
-    display: flex;
-    justify-content: center;
-    color: #1f2937;
-    margin: 0;
-    padding: 0;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 10%;
 }
 
-.information {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 5%;
-}
 
-.information h1 {
+h2 {
     font-size: 36px;
     font-weight: 900;
     margin-top: 0;
@@ -115,25 +98,37 @@ padding: 50px;
 
 .cards {
     display: flex;
-    justify-content: space-evenly;
-    gap: 42px;
- 
+    flex-wrap: wrap;
+    justify-content: center;  
+    gap: 24px;
+
+    border: red 2px solid;
 }
 
 .card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    
+    flex: 1;
+    border: darkgoldenrod 2px solid;
 }
 
-.card-box {
-    border: solid 3px #3882f6;
-    border-radius: 10px;
+
+.card-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
     width: 150px;
-    height: 150px;
+    border: purple 2px solid;
 }
+
+.card img {
+    width: 150px;
+    height: 100px;
+    border: 3px solid #3882f6;
+    border-radius: 3px;
+  
+}
+
+
 
 .quote-container {
     display: flex;
@@ -160,6 +155,7 @@ padding: 50px;
 }
  
 .bottom {
+    display: flex;
     justify-content: center;
     align-items: center;
     padding: 3%;
@@ -176,11 +172,11 @@ padding: 50px;
     width: 500px;
 }
 
-.cta h2, p {
+.cta h3, p {
     margin: 0;
 }
 
-.cta h2 {
+h3 {
     font-size: 22px;
 }
 
@@ -189,14 +185,18 @@ padding: 50px;
 }
 
 .sign-up {
-    border: #f9faf8 1px solid;
+    border: #f9faf8 2px solid;
     flex-shrink: 0;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
     width: auto;
     height: auto;
 }
 
 
 footer {
+    display: flex;
     justify-content: center;
-   
+    margin-top: auto;
 }
