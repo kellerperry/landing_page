@@ -6,7 +6,7 @@ This is a foundational html and CSS project guided by curriculum found on [The O
 ## Image Attributions
 Photos found on Unsplash and provided by:
 
-[Jude Infantini](https://unsplash.com/@judowoodo_?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+[Jude Infantini](https://unsplash.com/photos/rYOqbTcGp1c?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 
 [Nadya Spetnitskaya](https://unsplash.com/photos/tOYiQxF9-Ys?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 
