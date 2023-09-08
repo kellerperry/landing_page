@@ -1,11 +1,7 @@
 # This is a simple landing page using Flexbox
 
----
-
 ## Description
 This is a foundational html and CSS project guided by curriculum found on [The Odin Project](https://theodinproject.com/): A simple landing page using the flexbox layout. 
-
----
 
 ## Image Attributions
 Photos found on Unsplash and provided by:
